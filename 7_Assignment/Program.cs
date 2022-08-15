@@ -39,4 +39,18 @@ while(true){
     }
 }
 */
+class CarDealer{
+
+    public string CarDealerName = "";
+
+    
+    public CarDealer(){
+
+    }
+
+    void buy(){
+
+    }
+}
+
 #endregion
