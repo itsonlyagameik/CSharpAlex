@@ -1,0 +1,56 @@
+
+@startuml Classes
+
+class CarDealer{
+    + Customers = {}
+}
+
+class Car{
+    + Wheels = {}
+}
+
+class CarPart{
+    + Color =
+    + Material =
+    + Condition =
+    + Weight =
+}
+
+class Tire{
+    + Size =
+    + Tread Depth = 8mm
+    + Type = Summerwheels
+}
+
+class Engine{
+    + Horsepower = 20
+    + RPM = 600
+}
+
+class Person{
+    + Money = 0
+    + Carlist =  {}
+}
+
+class Door{
+    
+}
+
+class Buyer{
+    + Spendable money = 0
+}
+
+class Seller{
+
+}
+
+Person <|-- Buyer
+Person <|-- Seller
+Person <|-- CarDealer
+CarDealer -- Car
+Car -- CarPart
+CarPart <|-- Engine
+CarPart <|-- Tire
+CarPart <|-- Door
+
+@enduml
